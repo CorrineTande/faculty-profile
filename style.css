@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #004d7f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #002a5c;
+}
+
+.faculty-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.faculty-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: background 0.3s;
+}
+
+.faculty-card:hover {
+    background: #e0f7fa;
+}
+
+.title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.research-interests {
+    list-style-type: none;
+    padding: 0;
+}
+
+.research-interests li {
+    background-color: #e0f2f1;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .faculty-card {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
